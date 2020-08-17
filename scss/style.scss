@@ -1,0 +1,21 @@
+@import 'config';
+@import 'showcase';
+@import 'navigation';
+
+
+.brand {
+    z-index: 1;
+
+    h1 {
+        font-size: 30px;
+        font-family: 'Dancing Script', cursive;
+        color: goldenrod;
+        line-height: 1;
+        margin: 0;
+
+        background-color: #222;
+        padding: 12px;
+        border-radius: 45%;
+        border: 2px solid goldenrod;
+    }
+}

@@ -1,0 +1,5 @@
+-lägg till content nedanför videon på landningssidan
+-scrolla med naven när man scrollar på sidan
+-lägg till någon indikator på att man kan scrolla ner(?)
+
+-fixa landningssidan för mobil
