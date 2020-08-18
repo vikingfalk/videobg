@@ -7,15 +7,22 @@
     z-index: 1;
 
     h1 {
-        font-size: 30px;
+        font-size: 20px;
         font-family: 'Dancing Script', cursive;
         color: goldenrod;
         line-height: 1;
         margin: 0;
 
         background-color: #222;
-        padding: 12px;
+        padding: 8px;
         border-radius: 45%;
         border: 2px solid goldenrod;
+    }
+}
+
+@media(min-width: 480px) {
+    .brand h1 {
+        font-size: 30px;
+        padding: 12px;
     }
 }
