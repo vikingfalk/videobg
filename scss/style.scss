@@ -7,14 +7,14 @@
     z-index: 1;
 
     h1 {
-        font-size: 20px;
+        font-size: 25px;
         font-family: 'Dancing Script', cursive;
-        color: goldenrod;
+        color: $p-clr;
         line-height: 1;
         margin: 0;
 
         background-color: #222;
-        padding: 8px;
+        padding: 10px;
         border-radius: 45%;
         border: 2px solid goldenrod;
     }
@@ -36,6 +36,7 @@
     width: 70%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about-content {
@@ -49,11 +50,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        .btn {
+            margin: 30px;
+        }
     }
 }
 
 .about-img {
     max-height: 400px;
+    max-width: 100%;
 }
 
 @media(min-width: 480px) {
