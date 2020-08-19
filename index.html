@@ -9,11 +9,7 @@
 </head>
 
 <body>
-    <div class="overlay"></div>
-    <section class="showcase">
-        <div class="video-container">
-            <video src="video/video.mp4" autoplay muted loop></video>
-        </div>
+    <div class="main-container">
         <div class="nav-container">
             <div class="brand">
                 <h1>VikingsKaffe</h1>
@@ -35,14 +31,34 @@
                 </ul>
             </div>
         </nav>
-        <div class="content">
-            <h2>Mmm, kaffe!</h2>
-            <h3>Lång erfarenhet av svart och rivigt kaffe har gett oss vårt unika sortiment
-                som garanterar dig en stark upplevelse.</h3>
-            <a href="#" class="btn">Visa produkter</a>
-        </div>
-    </section>
-    <!--Showcase-->
+        <div class="main-content">
+            <div class="overlay"></div>
+            <section class="showcase">
+                <div class="video-container">
+                    <video src="video/video.mp4" autoplay muted loop></video>
+                </div>
+                <div class="showcase-content">
+                    <h2>Mmm, kaffe!</h2>
+                    <h3>Lång erfarenhet av svart och rivigt kaffe har gett oss vårt unika sortiment
+                        som garanterar dig en stark smakupplevelse</h3>
+                    <a href="#" class="btn main">Visa produkter</a>
+                </div>
+            </section><!--Showcase-->
+
+            <section class="landing-section light-bg">
+                <div class="about-container">
+                    <div class="about-content">
+                        <h4 class="section-header">Bara det bästa är bra nog</h4>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae quis dolorum perspiciatis error deleniti quisquam harum reprehenderit et neque, incidunt dolor atque temporibus molestias nihil laudantium autem accusamus magni?</h5>
+                        <div class="button-container">
+                            <a href="#" class="btn secondary">Läs mer</a>
+                        </div>
+                    </div>
+                    <img src="/img/coffee-beans1.jpg" class="about-img">
+                </div>
+            </section>
+        </div><!--main-content-->
+    </div><!--main-container-->
 
     <script src="js/script.js"></script>
 </body>

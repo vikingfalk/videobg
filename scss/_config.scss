@@ -3,6 +3,9 @@
 
 
 $p-clr: goldenrod;
+$btn-clr: rgb(238, 181, 37);
+$bg-light: #fafafa;
+$bg-dark: #eaeaea;
 
 
 * {
@@ -25,6 +28,31 @@ a {
     color: floralwhite;
 }
 
+h5 {
+    font-size: 1rem;
+}
+
 ul {
     list-style: none;
+}
+
+.light-bg {
+    background-color: $bg-light;
+    color: #333;
+}
+
+.section-header {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    line-height: 1;
+
+    &::after {
+        content: '';
+        height: 5px;
+        width: 60px;
+        background-color: $p-clr;
+        margin-top: 5px;
+    }
 }

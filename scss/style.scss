@@ -20,6 +20,42 @@
     }
 }
 
+.main-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.about-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+
+    .button-container {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.about-img {
+    max-height: 400px;
+}
+
 @media(min-width: 480px) {
     .brand h1 {
         font-size: 30px;
