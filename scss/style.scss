@@ -1,6 +1,7 @@
 @import 'config';
 @import 'showcase';
 @import 'navigation';
+@import 'landing';
 
 
 .brand {
@@ -18,48 +19,6 @@
         border-radius: 45%;
         border: 2px solid goldenrod;
     }
-}
-
-.main-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.landing-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 0;
-}
-
-.about-container {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.about-content {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-
-    .button-container {
-        flex: 1;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .btn {
-            margin: 30px;
-        }
-    }
-}
-
-.about-img {
-    max-height: 400px;
-    max-width: 100%;
 }
 
 @media(min-width: 480px) {

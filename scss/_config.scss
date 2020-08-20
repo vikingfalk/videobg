@@ -18,9 +18,19 @@ html {
     font-size: 20px;
 }
 
+html {
+    width:100vw;
+    overflow-x:hidden;
+}
+
 body {
     font-family: 'Heebo', sans-serif;
     color: floralwhite;
+}
+
+html.no-scroll, body.no-scroll {
+    margin: 0;
+    overflow: hidden;
 }
 
 a {

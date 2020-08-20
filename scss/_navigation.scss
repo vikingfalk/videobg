@@ -17,11 +17,6 @@
     &.secondary {
         border: 1px solid #333;
         padding: .4rem 1.5rem;
-
-        &:hover {
-            background-color: #333;
-            color: floralwhite;
-        }
     }
 }
 
@@ -43,7 +38,17 @@
     align-items: flex-end;
     height: 26px;
     z-index: 4;
+    position: relative;
 
+    &::before {
+        content: 'MENY';
+        font-weight: bold;
+        font-size: .8rem;
+        position: absolute;
+        display: none;
+        top: 2px;
+        left: -55px;
+    }
 
     &:hover {
         cursor: pointer;
@@ -63,6 +68,10 @@
 }
 
 .toggle-button.active {
+    &::before {
+        content: 'STÄNG';
+    }
+
     .line:nth-of-type(2) {
         opacity: 0;
     }
@@ -160,6 +169,12 @@
 
 @media(min-width: 480px) {
     .nav-container {
-        padding: 40px 60px;
+        padding: 40px 80px;
+    }
+}
+
+@media(min-width: 992px) {
+    .toggle-button::before {
+        display: initial;
     }
 }
