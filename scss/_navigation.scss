@@ -4,31 +4,57 @@
     transition: all .2s;
     color: #333;
     font-weight: bold;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        width: 10px;
+        font-size: 24px;
+        transition: all .3s;
+        margin-left: 5px;
+    }
 
     &.main {
         background-color: $btn-clr;
 
         &:hover {
             background-color: lighten($btn-clr, 15);
+
+            i {
+                transform: translateX(15px);
+            }
         }
     }
 
     &.secondary {
         border: 1px solid #333;
-        padding: .4rem 1.5rem;
+        padding: .55rem 1.95rem;
     }
 }
 
-.nav-container {
-    position: absolute;
+.navbar {
+    position: fixed;
     top: 0;
-    width: 100%;
-    padding: 30px;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    transition: all .4s;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .nav-container {
+        width: 80%;
+        margin: auto;
+        padding: 30px 0;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all .4s;
+
+        .brand {
+            transform: scale(1.2);
+        }
+    }
 }
 
 .toggle-button {
@@ -37,18 +63,11 @@
     justify-content: space-between;
     align-items: flex-end;
     height: 26px;
-    z-index: 4;
+    z-index: 12;
     position: relative;
-
-    &::before {
-        content: 'MENY';
-        font-weight: bold;
-        font-size: .8rem;
-        position: absolute;
-        display: none;
-        top: 2px;
-        left: -55px;
-    }
+    transition: all .5s;
+    left: 0;
+    top: 0;
 
     &:hover {
         cursor: pointer;
@@ -59,7 +78,7 @@
         width: 35px;
         height: 3px;
         border-radius: 20px;
-        transition: all .4s;
+        transition: all .5s;
 
         &:nth-of-type(2) {
             width: 28px;
@@ -68,10 +87,6 @@
 }
 
 .toggle-button.active {
-    &::before {
-        content: 'STÄNG';
-    }
-
     .line:nth-of-type(2) {
         opacity: 0;
     }
@@ -81,22 +96,22 @@
     }
 
     .line:nth-of-type(3) {
-        transform: rotate(-45deg) translate(8px, -8px);
+        transform: rotate(-45deg) translate(8px, -9px);
     }
 }
 
 .toggle-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 600px;
     max-width: 100vw;
-    z-index: 3;
+    z-index: 11;
     transform: translateX(100%);
     transition: transform .5s;
 
-    background-color: rgba(34,34,34, .95);
+    background-color: rgba(34,34,34, 1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,23 +136,6 @@
         opacity: 0%;
         transition: all .5s ease-in;
         line-height: 1;
-
-        a::after {
-            content: '';
-            display: block;
-            background-color: $p-clr;
-            height: 2px;
-            width: 0%;
-            margin-top: 5px;
-            z-index: 3;
-            transition: all .2s ease-out;
-        }
-
-        &:hover {
-            a::after {
-                width: 100%;
-            }
-        }
     }
 }
 
@@ -167,14 +165,47 @@
     opacity: 100%;
 }
 
-@media(min-width: 480px) {
-    .nav-container {
-        padding: 40px 80px;
+@media(min-width: 1200px) {
+    .toggle-button {
+        display: none;
+    }
+
+    .toggle-menu {
+        transform: translateX(0%);
+        position: initial;
+        height: initial;
+        width: initial;
+        background: none;
+
+        .links-container {
+            width: initial;
+            height: initial;
+            margin: 0;
+        }
+
+        .menu-links {
+            flex-direction: row;
+
+            .menu-link {
+                opacity: 100%;
+                margin-left: 80px;
+                font-size: 1rem;
+
+                &:hover a{
+                    color: $btn-clr;
+                    transition: all .2s;
+                }
+
+                &:first-of-type {
+                    margin-left: 0;
+                }
+            }
+        }
     }
 }
 
-@media(min-width: 992px) {
-    .toggle-button::before {
-        display: initial;
+@media(min-width: 1300px) {
+    .navbar .nav-container {
+        width: 70%;
     }
 }

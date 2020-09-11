@@ -1,0 +1,33 @@
+footer {
+    background: #222;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+
+        h5 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .links {
+        margin-top: 30px;
+    }
+}
+
+@media(min-width: 768px) {
+    footer .footer-container {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        iframe {
+            width: 400px;
+            height: 300px;
+        }
+    }
+}

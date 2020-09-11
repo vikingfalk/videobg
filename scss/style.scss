@@ -2,10 +2,11 @@
 @import 'showcase';
 @import 'navigation';
 @import 'landing';
-
+@import 'footer';
 
 .brand {
     z-index: 1;
+    transition: all .4s;
 
     h1 {
         font-size: 25px;
@@ -14,10 +15,10 @@
         line-height: 1;
         margin: 0;
 
-        background-color: #222;
+        background-color: #303030;
         padding: 10px;
         border-radius: 45%;
-        border: 2px solid goldenrod;
+        border: 3px solid goldenrod;
     }
 }
 

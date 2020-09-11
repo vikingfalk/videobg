@@ -5,14 +5,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     padding: 0 20px;
     overflow: hidden;
 
     &-content {
         z-index: 1;
-        max-width: 600px;
-        padding-top: 100px;
+        max-width: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
         h2 {
             font-size: 5rem;
@@ -25,6 +28,22 @@
             margin: 0 auto 50px auto;
             line-height: 1.6;
             max-width: 500px;
+        }
+
+        .scroll-icon {
+            font-size: 62px;
+            position: fixed;
+            bottom: 30px;
+            opacity: 80%;
+            animation-name: scrollAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 4s;
+        }
+
+        @keyframes scrollAnimation {
+            0% {bottom: 100px; opacity: 0%;}
+            40% {bottom: 30px; opacity: 80%;}
         }
     }
 

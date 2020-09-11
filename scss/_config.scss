@@ -5,7 +5,7 @@
 $p-clr: goldenrod;
 $btn-clr: rgb(238, 181, 37);
 $bg-light: #fafafa;
-$bg-dark: #eaeaea;
+$bg-dark: #f4f3f3;
 
 
 * {
@@ -16,9 +16,7 @@ $bg-dark: #eaeaea;
 
 html {
     font-size: 20px;
-}
 
-html {
     width:100vw;
     overflow-x:hidden;
 }
@@ -26,6 +24,9 @@ html {
 body {
     font-family: 'Heebo', sans-serif;
     color: floralwhite;
+
+    width:100vw;
+    overflow-x:hidden;
 }
 
 html.no-scroll, body.no-scroll {
@@ -51,18 +52,7 @@ ul {
     color: #333;
 }
 
-.section-header {
-    font-size: 50px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    line-height: 1;
-
-    &::after {
-        content: '';
-        height: 5px;
-        width: 60px;
-        background-color: $p-clr;
-        margin-top: 5px;
-    }
+.dark-bg {
+    background-color: $bg-dark;
+    color: #333;
 }
