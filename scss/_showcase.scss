@@ -10,7 +10,7 @@
 
     &-content {
         z-index: 1;
-        max-width: 750px;
+        max-width: 850px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -33,17 +33,19 @@
         .scroll-icon {
             font-size: 62px;
             position: fixed;
-            bottom: 30px;
-            opacity: 80%;
+            bottom: 20px;
+            opacity: 0%;
             animation-name: scrollAnimation;
-            animation-duration: 5s;
+            animation-duration: 3s;
             animation-iteration-count: infinite;
-            animation-delay: 4s;
+            animation-delay: 2s;
+            animation-timing-function: linear;
         }
 
         @keyframes scrollAnimation {
-            0% {bottom: 100px; opacity: 0%;}
-            40% {bottom: 30px; opacity: 80%;}
+            0% {bottom: 120px; opacity: 0%;}
+            25% {opacity: 50%;}
+            50% {bottom: 20px; opacity: 0%;}
         }
     }
 

@@ -12,7 +12,36 @@ footer {
         row-gap: 50px;
 
         h5 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        h6 {
+            font-size: 1rem;
+            font-weight: lighter;
+            line-height: 1.4rem;
+            display: flex;
+            align-items: center;
+
+            &#city {
+                margin-left: 34px;
+            }
+
+            i {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+        }
+
+        .social-media{
+
+            a {
+                margin-right: 5px;
+            }
+
+            img {
+                width: 30px;
+            }
         }
     }
 

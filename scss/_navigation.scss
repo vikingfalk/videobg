@@ -188,8 +188,9 @@
 
             .menu-link {
                 opacity: 100%;
-                margin-left: 80px;
+                margin-left: 60px;
                 font-size: 1rem;
+                font-weight: bold;
 
                 &:hover a{
                     color: $btn-clr;
