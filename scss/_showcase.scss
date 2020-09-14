@@ -42,6 +42,9 @@
             animation-timing-function: linear;
         }
 
+        .btn {
+            z-index: 2;
+        }
         @keyframes scrollAnimation {
             0% {bottom: 120px; opacity: 0%;}
             25% {opacity: 50%;}
