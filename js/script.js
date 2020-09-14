@@ -117,7 +117,7 @@ document.addEventListener('scroll', () => {
     }
 
     if(html.scrollTop > 450) {
-        setTimeout(() => {matchMkr.classList.add('slide')}, 300);
+        matchMkr.classList.add('slide');
     }
 
     if(html.scrollTop > 2000) {
